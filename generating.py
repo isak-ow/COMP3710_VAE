@@ -44,13 +44,15 @@ def plot_generated_image(generated_image):
     plt.tight_layout()
     #Return the plot
     return plt
-
+device = torch.device('cuda')
 model = VAE(2)
+model.to(device)
 model.load_state_dict(torch.load('vae_model.pth'))  
 model.eval() 
 
 num_samples = 10  # Number of images you want to generate
-random_latent_vectors = torch.randn(num_samples, latent_dim)
+random_latent_vectors = torch.randn(num_samples, 2)
+random_latent_vectors.to(device)
 
 with torch.no_grad():
     generated_images = model.decode(random_latent_vectors)

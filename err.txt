@@ -1,18 +1,32 @@
 wandb: Currently logged in as: isakow (ai_in_brissy). Use `wandb login --relogin` to force relogin
 wandb: Tracking run with wandb version 0.15.10
-wandb: Run data is saved locally in /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_202805-ygzbvvi7
+wandb: Run data is saved locally in /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_214852-0xodefz2
 wandb: Run `wandb offline` to turn off syncing.
 wandb: Syncing run VAE
 wandb: ⭐️ View project at https://wandb.ai/ai_in_brissy/OSASIS_VAE_rangpur
-wandb: 🚀 View run at https://wandb.ai/ai_in_brissy/OSASIS_VAE_rangpur/runs/ygzbvvi7
-wandb: Waiting for W&B process to finish... (success).
-wandb: - 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: \ 0.015 MB of 0.021 MB uploaded (0.000 MB deduped)wandb: | 0.021 MB of 0.021 MB uploaded (0.000 MB deduped)wandb: 
+wandb: 🚀 View run at https://wandb.ai/ai_in_brissy/OSASIS_VAE_rangpur/runs/0xodefz2
+Traceback (most recent call last):
+  File "/home/Student/s4820129/COMP3710_VAE/generating.py", line 58, in <module>
+    generated_images = model.decode(random_latent_vectors)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Student/s4820129/COMP3710_VAE/VAE_script.py", line 84, in decode
+    z = self.decoder_fc(z)
+        ^^^^^^^^^^^^^^^^^^
+  File "/home/Student/s4820129/miniconda3/envs/cluster_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Student/s4820129/miniconda3/envs/cluster_env/lib/python3.11/site-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu! (when checking argument for argument mat1 in method wrapper_CUDA_addmm)
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: 
 wandb: Run history:
-wandb: loss ▁
+wandb: loss █▃▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
 wandb: 
 wandb: Run summary:
-wandb: loss 2277.193
+wandb: loss 1127.01243
 wandb: 
-wandb: 🚀 View run VAE at: https://wandb.ai/ai_in_brissy/OSASIS_VAE_rangpur/runs/ygzbvvi7
+wandb: 🚀 View run VAE at: https://wandb.ai/ai_in_brissy/OSASIS_VAE_rangpur/runs/0xodefz2
 wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
-wandb: Find logs at: ./wandb/run-20230912_202805-ygzbvvi7/logs
+wandb: Find logs at: ./wandb/run-20230912_214852-0xodefz2/logs
