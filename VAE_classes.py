@@ -8,9 +8,6 @@ class VarAutoEncoder(nn.Module):
         super(VarAutoEncoder, self).__init__()
 
         self.latent_dim = latent_dim
-        self.fully_connected = nn.Flatten()
-        self.average = nn.Linear(128*128, latent_dim)
-        self.sigma = nn.Linear(128*128, latent_dim)
 
         self.encoder_layers = nn.Sequential(
             #batch_size x 3 x 256 x 256
@@ -31,16 +28,27 @@ class VarAutoEncoder(nn.Module):
             nn.LeakyReLU()
         )
 
+        self.fc_mu = nn.Linear(512*128*128, latent_dim)
+        self.fc_sigma = nn.Linear(512*128*128, latent_dim)
+        self.fc_decode = nn.Linear(latent_dim, 512*128*128)
+
         self.decoder_layers = nn.Sequential(
-            nn.Conv2d(512,256,kernel_size=4),
+            # batch_size x 512 x 128 x 128
+            nn.ConvTranspose2d(512, 256, kernel_size=3, stride=1, padding=1),
             nn.BatchNorm2d(256),
-            nn.ReLU,
-            nn.Conv2d(256,128),
+            nn.ReLU(),
+            # batch_size x 256 x 128 x 128
+            nn.ConvTranspose2d(256, 128, kernel_size=3, stride=1, padding=1),
             nn.BatchNorm2d(128),
-            nn.Conv2d(128,64),
+            nn.ReLU(),
+            # batch_size x 128 x 128 x 128
+            nn.Conv2d(128, 64, kernel_size=3, stride=1, padding=1),
             nn.BatchNorm2d(64),
-            nn.Conv2d(64,3),
+            nn.ReLU(),
+            # batch_size x 64 x 128 x 128
+            nn.Conv2d(64, 3, kernel_size=3, stride=1, padding=1),
             nn.LeakyReLU()
+            # batch_size x 3 x 128 x 128
         )
 
     def reparameterize(self, mu, sigma):
@@ -49,19 +57,17 @@ class VarAutoEncoder(nn.Module):
         return mu + eps*std
 
     def forward(self,x):
-        # encoder network
-        x = self.encoder_layer(x) #should add residual blocks
+        x = self.encoder_layers(x)
         x = x.view(x.size(0), -1)
 
-        #latent space
-        mu = self.average(x)
-        sigma = self.sigma(x)
+        mu = self.fc_mu(x)
+        sigma = self.fc_sigma(x)
         z = self.reparameterize(mu, sigma)
-        nn.Linear(self.latent_dim, 128*128),
-        nn.ReLU()
-        #batch_size x 512 x 128 x 128
 
-        x_hat = self.decode_layers(z)
+        x = self.fc_decode(z)
+        x = x.view(-1, 512, 128, 128) # Reshape to 4D before feeding into the decoder
+
+        x_hat = self.decoder_layers(x)
         return x_hat, mu, sigma
 
 
