@@ -5,7 +5,7 @@ import torch.nn.functional as F
 
 class VarAutoEncoder(nn.Module):
     def __init__(self, latent_dim):
-        super(VarAutoEncoder, self).__init__():
+        super(VarAutoEncoder, self).__init__()
 
         self.latent_dim = latent_dim
         self.fully_connected = nn.Flatten()
@@ -14,11 +14,11 @@ class VarAutoEncoder(nn.Module):
 
         self.encoder_layers = nn.Sequential(
             #batch_size x 3 x 256 x 256
-            nn.Conv2d(3,64,kernel_size=3),
+            nn.Conv2d(3,64,kernel_size=3,padding=1),
             nn.BatchNorm2d(64),
             nn.ReLU(),
             #batch_size x 64 x 256 x 256
-            nn.Conv2d(64,128),
+            nn.Conv2d(64,128,padding=1),
             nn.BatchNorm2d(128),
             nn.ReLU(),
             #batch_size x 128 x 256 x 256
