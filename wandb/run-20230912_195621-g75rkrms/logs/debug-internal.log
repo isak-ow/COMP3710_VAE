@@ -3717,3 +3717,221 @@ FileNotFoundError: [Errno 2] No such file or directory: 'conda'
 2023-09-12 20:15:37,953 DEBUG   HandlerThread:170863 [handler.py:handle_request():144] handle_request: internal_messages
 2023-09-12 20:15:38,330 INFO    Thread-12 :170863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_195621-g75rkrms/files/output.log
 2023-09-12 20:15:38,769 DEBUG   HandlerThread:170863 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:15:39,716 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:39,716 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:39,717 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:39,717 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:39,717 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:40,346 INFO    Thread-12 :170863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_195621-g75rkrms/files/output.log
+2023-09-12 20:15:41,717 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:41,717 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:41,717 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:41,717 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:41,717 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:42,366 INFO    Thread-12 :170863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_195621-g75rkrms/files/output.log
+2023-09-12 20:15:43,725 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:43,725 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:43,725 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:43,726 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:43,726 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:43,800 DEBUG   HandlerThread:170863 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:15:44,370 INFO    Thread-12 :170863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_195621-g75rkrms/files/output.log
+2023-09-12 20:15:45,726 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:45,726 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:45,726 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:45,726 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:45,727 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:46,379 INFO    Thread-12 :170863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_195621-g75rkrms/files/output.log
+2023-09-12 20:15:47,727 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:47,727 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:47,727 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:47,727 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:47,727 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:48,391 INFO    Thread-12 :170863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_195621-g75rkrms/files/output.log
+2023-09-12 20:15:48,870 DEBUG   HandlerThread:170863 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:15:49,728 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:49,728 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:49,728 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:49,728 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:49,728 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:50,398 INFO    Thread-12 :170863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_195621-g75rkrms/files/output.log
+2023-09-12 20:15:51,729 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:51,729 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:51,729 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:51,729 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:51,729 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:52,422 INFO    Thread-12 :170863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_195621-g75rkrms/files/output.log
+2023-09-12 20:15:52,740 DEBUG   SenderThread:170863 [sender.py:send():379] send: stats
+2023-09-12 20:15:52,952 DEBUG   HandlerThread:170863 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-12 20:15:52,952 DEBUG   SenderThread:170863 [sender.py:send_request():406] send_request: stop_status
+2023-09-12 20:15:52,954 DEBUG   HandlerThread:170863 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-12 20:15:53,744 ERROR   gpu       :170863 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-09-12 20:15:53,744 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:53,744 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:53,744 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:53,745 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:53,745 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:53,915 DEBUG   HandlerThread:170863 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:15:54,455 INFO    Thread-12 :170863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_195621-g75rkrms/files/output.log
+2023-09-12 20:15:55,745 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:55,745 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:55,745 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:55,746 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:55,746 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:56,493 INFO    Thread-12 :170863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_195621-g75rkrms/files/output.log
+2023-09-12 20:15:57,750 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:57,750 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:57,750 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:57,750 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:57,751 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:58,533 INFO    Thread-12 :170863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_195621-g75rkrms/files/output.log
+2023-09-12 20:15:58,934 DEBUG   HandlerThread:170863 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:15:59,751 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:59,751 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:59,751 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:59,751 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:15:59,751 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:00,543 INFO    Thread-12 :170863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_195621-g75rkrms/files/output.log
+2023-09-12 20:16:01,760 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:01,761 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:01,761 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:01,761 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:01,761 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:02,310 DEBUG   HandlerThread:170863 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 20:16:02,311 DEBUG   SenderThread:170863 [sender.py:send():379] send: history
+2023-09-12 20:16:02,311 DEBUG   SenderThread:170863 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 20:16:02,521 INFO    SenderThread:170863 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 20:16:02,566 INFO    Thread-12 :170863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_195621-g75rkrms/files/wandb-summary.json
+2023-09-12 20:16:02,566 INFO    Thread-12 :170863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_195621-g75rkrms/files/output.log
+2023-09-12 20:16:03,763 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:03,763 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:03,763 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:03,763 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:03,763 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:04,021 DEBUG   HandlerThread:170863 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:16:04,575 INFO    Thread-12 :170863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_195621-g75rkrms/files/output.log
+2023-09-12 20:16:05,766 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:05,766 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:05,766 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:05,766 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:05,767 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:06,582 INFO    Thread-12 :170863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_195621-g75rkrms/files/output.log
+2023-09-12 20:16:07,767 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:07,767 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:07,767 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:07,767 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:07,767 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:07,952 DEBUG   HandlerThread:170863 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-12 20:16:07,953 DEBUG   SenderThread:170863 [sender.py:send_request():406] send_request: stop_status
+2023-09-12 20:16:07,955 DEBUG   HandlerThread:170863 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-12 20:16:08,609 INFO    Thread-12 :170863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_195621-g75rkrms/files/output.log
+2023-09-12 20:16:09,030 DEBUG   HandlerThread:170863 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:16:09,768 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:09,768 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:09,768 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:09,768 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:09,768 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:10,615 INFO    Thread-12 :170863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_195621-g75rkrms/files/output.log
+2023-09-12 20:16:11,776 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:11,787 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:11,787 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:11,787 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:11,787 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:12,643 INFO    Thread-12 :170863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_195621-g75rkrms/files/output.log
+2023-09-12 20:16:13,788 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:13,788 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:13,788 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:13,788 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:13,788 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:14,085 DEBUG   HandlerThread:170863 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:16:14,668 INFO    Thread-12 :170863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_195621-g75rkrms/files/output.log
+2023-09-12 20:16:15,795 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:15,796 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:15,796 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:15,796 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:15,796 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:16,715 INFO    Thread-12 :170863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_195621-g75rkrms/files/output.log
+2023-09-12 20:16:17,804 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:17,804 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:17,804 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:17,804 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:17,805 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:18,755 INFO    Thread-12 :170863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_195621-g75rkrms/files/output.log
+2023-09-12 20:16:19,154 DEBUG   HandlerThread:170863 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:16:19,805 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:19,805 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:19,805 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:19,805 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:19,805 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:20,810 INFO    Thread-12 :170863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_195621-g75rkrms/files/output.log
+2023-09-12 20:16:21,806 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:21,807 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:21,807 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:21,807 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:21,807 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:21,840 INFO    Thread-12 :170863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_195621-g75rkrms/files/output.log
+2023-09-12 20:16:22,752 DEBUG   SenderThread:170863 [sender.py:send():379] send: stats
+2023-09-12 20:16:22,952 DEBUG   HandlerThread:170863 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-12 20:16:22,953 DEBUG   SenderThread:170863 [sender.py:send_request():406] send_request: stop_status
+2023-09-12 20:16:22,956 DEBUG   HandlerThread:170863 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-12 20:16:23,821 ERROR   gpu       :170863 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-09-12 20:16:23,822 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:23,822 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:23,822 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:23,822 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:23,822 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:23,844 INFO    Thread-12 :170863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_195621-g75rkrms/files/output.log
+2023-09-12 20:16:24,227 DEBUG   HandlerThread:170863 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:16:25,823 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:25,823 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:25,823 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:25,823 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:25,823 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:25,866 INFO    Thread-12 :170863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_195621-g75rkrms/files/output.log
+2023-09-12 20:16:27,824 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:27,824 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:27,824 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:27,824 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:27,825 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:27,922 INFO    Thread-12 :170863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_195621-g75rkrms/files/output.log
+2023-09-12 20:16:29,270 DEBUG   HandlerThread:170863 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:16:29,825 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:29,825 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:29,825 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:29,825 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:29,825 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:29,943 INFO    Thread-12 :170863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_195621-g75rkrms/files/output.log
+2023-09-12 20:16:31,382 DEBUG   HandlerThread:170863 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 20:16:31,383 DEBUG   SenderThread:170863 [sender.py:send():379] send: history
+2023-09-12 20:16:31,383 DEBUG   SenderThread:170863 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 20:16:31,473 INFO    SenderThread:170863 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 20:16:31,826 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:31,826 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:31,826 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:31,826 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:31,826 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:31,986 INFO    Thread-12 :170863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_195621-g75rkrms/files/wandb-summary.json
+2023-09-12 20:16:31,986 INFO    Thread-12 :170863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_195621-g75rkrms/files/output.log
+2023-09-12 20:16:33,827 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:33,827 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:33,827 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:33,827 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:33,827 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:34,009 INFO    Thread-12 :170863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_195621-g75rkrms/files/output.log
+2023-09-12 20:16:34,287 DEBUG   HandlerThread:170863 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:16:35,835 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:35,835 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:35,835 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:35,835 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:35,836 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:36,027 INFO    Thread-12 :170863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_195621-g75rkrms/files/output.log
+2023-09-12 20:16:37,836 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:37,836 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:37,836 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:37,836 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:37,836 ERROR   gpu       :170863 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 20:16:37,953 DEBUG   HandlerThread:170863 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-12 20:16:37,953 DEBUG   SenderThread:170863 [sender.py:send_request():406] send_request: stop_status
+2023-09-12 20:16:37,956 DEBUG   HandlerThread:170863 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-12 20:16:38,075 INFO    Thread-12 :170863 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_195621-g75rkrms/files/output.log
+2023-09-12 20:16:39,327 DEBUG   HandlerThread:170863 [handler.py:handle_request():144] handle_request: status_report
