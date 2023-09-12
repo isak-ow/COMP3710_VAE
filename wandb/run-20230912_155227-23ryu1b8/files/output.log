@@ -1,0 +1,22 @@
+getting dataset
+Dataset is already downloaded
+dataset downloaded!
+42257.0
+defining model
+1
+forward pass
+Encoder output shape: torch.Size([128, 128, 64, 64])
+Traceback (most recent call last):
+  File "/home/Student/s4820129/COMP3710_VAE/VAE_script.py", line 72, in <module>
+    x_hat, mu, sigma = model(x)
+                       ^^^^^^^^
+  File "/home/Student/s4820129/miniconda3/envs/cluster_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Student/s4820129/COMP3710_VAE/VAE_classes.py", line 133, in forward
+    return self.decode(z), mu, logvar
+           ^^^^^^^^^^^^^^
+  File "/home/Student/s4820129/COMP3710_VAE/VAE_classes.py", line 126, in decode
+    z = z.view(z.size(0), 128, 16, 16)  # Adjust the shape for convolutional layers
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: shape '[128, 128, 16, 16]' is invalid for input of size 67108864

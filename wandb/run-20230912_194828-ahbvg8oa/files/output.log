@@ -1,0 +1,14 @@
+Dataset is already downloaded
+getting dataset
+Dataset is already downloaded
+dataset downloaded!
+torch.Size([32, 2])
+torch.Size([32, 2])
+Traceback (most recent call last):
+  File "/home/Student/s4820129/COMP3710_VAE/VAE_script.py", line 142, in <module>
+    loss = loss_function(x_hat,x,mu,logvar)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Student/s4820129/COMP3710_VAE/VAE_script.py", line 123, in loss_function
+    BCE = F.binary_cross_entropy(recon_x, x, reduction='sum')
+          ^
+NameError: name 'F' is not defined

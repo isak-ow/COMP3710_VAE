@@ -1,0 +1,7 @@
+getting dataset
+Dataset is already downloaded
+Traceback (most recent call last):
+  File "/home/Student/s4820129/COMP3710_VAE/VAE_script.py", line 46, in <module>
+    oasis = oasis.astype('float32') / 255.0
+            ^^^^^^^^^^^^
+AttributeError: 'ImageFolder' object has no attribute 'astype'

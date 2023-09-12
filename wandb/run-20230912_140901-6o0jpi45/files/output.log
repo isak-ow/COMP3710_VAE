@@ -1,0 +1,6 @@
+getting dataset
+Dataset is already downloaded
+dataset downloaded!
+-112094.0
+tensor([-0.6646, -0.6646, -0.6646])
+tensor([0.5409, 0.5409, 0.5409])

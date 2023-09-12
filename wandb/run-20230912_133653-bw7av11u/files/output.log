@@ -1,0 +1,8 @@
+getting dataset
+Dataset is already downloaded
+dataset downloaded!
+Traceback (most recent call last):
+  File "/home/Student/s4820129/COMP3710_VAE/VAE_script.py", line 47, in <module>
+    image, label = dataset[55]
+                   ^^^^^^^
+NameError: name 'dataset' is not defined

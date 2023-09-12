@@ -1,0 +1,1160 @@
+2023-09-12 16:02:19,797 INFO    StreamThr :124030 [internal.py:wandb_internal():86] W&B internal server running at pid: 124030, started at: 2023-09-12 16:02:19.796163
+2023-09-12 16:02:19,798 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: status
+2023-09-12 16:02:19,802 INFO    WriterThread:124030 [datastore.py:open_for_write():85] open: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/run-hihpe4ss.wandb
+2023-09-12 16:02:19,804 DEBUG   SenderThread:124030 [sender.py:send():379] send: header
+2023-09-12 16:02:19,804 DEBUG   SenderThread:124030 [sender.py:send():379] send: run
+2023-09-12 16:02:20,647 INFO    SenderThread:124030 [dir_watcher.py:__init__():211] watching files in: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files
+2023-09-12 16:02:20,648 INFO    SenderThread:124030 [sender.py:_start_run_threads():1121] run started: hihpe4ss with start time 1694498539.800478
+2023-09-12 16:02:20,652 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: check_version
+2023-09-12 16:02:20,652 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: check_version
+2023-09-12 16:02:20,913 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: run_start
+2023-09-12 16:02:20,916 DEBUG   HandlerThread:124030 [system_info.py:__init__():32] System info init
+2023-09-12 16:02:20,916 DEBUG   HandlerThread:124030 [system_info.py:__init__():47] System info init done
+2023-09-12 16:02:20,916 INFO    HandlerThread:124030 [system_monitor.py:start():181] Starting system monitor
+2023-09-12 16:02:20,916 INFO    SystemMonitor:124030 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-09-12 16:02:20,917 INFO    HandlerThread:124030 [system_monitor.py:probe():201] Collecting system info
+2023-09-12 16:02:20,919 INFO    SystemMonitor:124030 [interfaces.py:start():190] Started cpu monitoring
+2023-09-12 16:02:20,920 INFO    SystemMonitor:124030 [interfaces.py:start():190] Started disk monitoring
+2023-09-12 16:02:20,921 INFO    SystemMonitor:124030 [interfaces.py:start():190] Started gpu monitoring
+2023-09-12 16:02:20,921 INFO    SystemMonitor:124030 [interfaces.py:start():190] Started memory monitoring
+2023-09-12 16:02:20,921 INFO    SystemMonitor:124030 [interfaces.py:start():190] Started network monitoring
+2023-09-12 16:02:20,924 DEBUG   HandlerThread:124030 [system_info.py:probe():196] Probing system
+2023-09-12 16:02:20,924 DEBUG   HandlerThread:124030 [system_info.py:probe():244] Probing system done
+2023-09-12 16:02:20,924 DEBUG   HandlerThread:124030 [system_monitor.py:probe():210] {'os': 'Linux-4.18.0-372.19.1.el8_6.x86_64-x86_64-with-glibc2.28', 'python': '3.11.4', 'heartbeatAt': '2023-09-12T06:02:20.924886', 'startedAt': '2023-09-12T06:02:19.785756', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/Student/s4820129/COMP3710_VAE/VAE_script.py', 'codePathLocal': 'VAE_script.py', 'codePath': 'VAE_script.py', 'host': 'vgpudev-1', 'username': 's4820129', 'executable': '/home/Student/s4820129/miniconda3/envs/cluster_env/bin/python3', 'cpu_count': 4, 'cpu_count_logical': 4, 'cpu_freq': {'current': 2894.562, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2894.562, 'min': 0.0, 'max': 0.0}, {'current': 2894.562, 'min': 0.0, 'max': 0.0}, {'current': 2894.562, 'min': 0.0, 'max': 0.0}, {'current': 2894.562, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 43.38896179199219, 'used': 19.110851287841797}}, 'gpu': 'GRID A100-2-10C', 'gpu_count': 1, 'gpu_devices': [{'name': 'GRID A100-2-10C', 'memory_total': 10733092864}], 'memory': {'total': 31.114086151123047}}
+2023-09-12 16:02:20,925 INFO    HandlerThread:124030 [system_monitor.py:probe():211] Finished collecting system info
+2023-09-12 16:02:20,925 INFO    HandlerThread:124030 [system_monitor.py:probe():214] Publishing system info
+2023-09-12 16:02:20,925 DEBUG   HandlerThread:124030 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-09-12 16:02:20,926 DEBUG   HandlerThread:124030 [system_info.py:_save_pip():68] Saving pip packages done
+2023-09-12 16:02:20,926 DEBUG   HandlerThread:124030 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2023-09-12 16:02:20,926 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:20,926 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:20,926 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:20,926 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:20,926 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:20,928 ERROR   HandlerThread:124030 [system_info.py:_save_conda():86] Error saving conda packages: [Errno 2] No such file or directory: 'conda'
+Traceback (most recent call last):
+  File "/home/Student/s4820129/miniconda3/envs/cluster_env/lib/python3.11/site-packages/wandb/sdk/internal/system/system_info.py", line 82, in _save_conda
+    subprocess.call(
+  File "/home/Student/s4820129/miniconda3/envs/cluster_env/lib/python3.11/subprocess.py", line 389, in call
+    with Popen(*popenargs, **kwargs) as p:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Student/s4820129/miniconda3/envs/cluster_env/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/Student/s4820129/miniconda3/envs/cluster_env/lib/python3.11/subprocess.py", line 1950, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'conda'
+2023-09-12 16:02:20,931 DEBUG   HandlerThread:124030 [system_info.py:_save_conda():87] Saving conda packages done
+2023-09-12 16:02:20,932 INFO    HandlerThread:124030 [system_monitor.py:probe():216] Finished publishing system info
+2023-09-12 16:02:20,936 DEBUG   SenderThread:124030 [sender.py:send():379] send: files
+2023-09-12 16:02:20,936 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-metadata.json with policy now
+2023-09-12 16:02:20,943 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-12 16:02:20,944 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: stop_status
+2023-09-12 16:02:20,984 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-12 16:02:21,516 DEBUG   SenderThread:124030 [sender.py:send():379] send: telemetry
+2023-09-12 16:02:21,649 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_created():271] file/dir created: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/output.log
+2023-09-12 16:02:21,649 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_created():271] file/dir created: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/requirements.txt
+2023-09-12 16:02:21,649 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_created():271] file/dir created: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-metadata.json
+2023-09-12 16:02:21,650 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_created():271] file/dir created: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/conda-environment.yaml
+2023-09-12 16:02:22,295 INFO    wandb-upload_0:124030 [upload_job.py:push():131] Uploaded file /scratch/72076/tmpe38v59t6wandb/8x2tqxs2-wandb-metadata.json
+2023-09-12 16:02:22,927 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:22,927 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:22,927 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:22,927 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:22,927 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:23,676 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/output.log
+2023-09-12 16:02:24,811 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:24,812 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:24,812 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:24,812 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 16:02:24,815 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:24,929 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:24,929 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:24,929 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:24,929 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:24,929 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:25,256 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:25,257 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:25,257 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:25,259 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:25,583 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:25,583 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:25,584 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:25,587 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:25,687 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/output.log
+2023-09-12 16:02:25,687 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_created():271] file/dir created: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:02:25,906 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:25,906 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:25,907 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:25,909 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:26,229 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:26,230 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:26,230 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:26,233 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:26,551 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:26,552 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:26,552 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:26,555 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:26,688 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:02:26,877 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:26,878 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:26,878 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:26,880 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:26,930 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:26,930 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:26,930 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:26,930 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:26,930 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:27,205 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:27,205 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:27,205 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:27,208 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:27,533 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:27,534 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:27,534 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:27,536 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:27,690 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:02:27,690 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/output.log
+2023-09-12 16:02:27,875 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:27,876 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:27,876 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:27,879 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:28,198 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:28,199 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:28,199 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:28,202 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:28,522 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:28,522 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:28,523 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:28,525 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:28,690 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:02:28,843 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:28,844 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:28,844 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:28,846 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:28,930 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:28,931 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:28,931 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:28,931 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:28,931 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:29,164 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:29,165 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:29,165 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:29,167 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:29,486 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:29,487 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:29,487 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:29,490 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:29,709 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:02:29,709 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/output.log
+2023-09-12 16:02:29,809 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:29,810 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:29,810 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:29,812 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:29,813 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 16:02:30,128 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:30,128 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:30,128 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:30,131 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:30,449 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:30,450 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:30,450 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:30,453 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:30,714 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:02:30,773 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:30,774 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:30,774 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:30,777 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:30,931 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:30,931 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:30,932 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:30,932 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:30,932 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:31,099 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:31,099 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:31,100 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:31,102 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:31,422 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:31,423 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:31,423 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:31,426 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:31,726 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:02:31,726 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/output.log
+2023-09-12 16:02:31,745 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:31,745 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:31,745 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:31,748 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:32,066 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:32,067 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:32,067 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:32,069 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:32,400 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:32,401 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:32,401 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:32,404 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:32,727 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:02:32,729 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:32,730 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:32,730 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:32,733 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:32,942 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:32,942 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:32,942 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:32,942 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:32,942 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:33,056 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:33,057 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:33,057 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:33,060 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:33,382 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:33,383 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:33,383 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:33,385 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:33,707 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:33,707 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:33,707 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:33,711 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:33,728 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:02:33,728 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/output.log
+2023-09-12 16:02:34,041 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:34,042 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:34,042 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:34,044 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:34,364 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:34,364 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:34,365 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:34,367 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:34,691 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:34,692 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:34,692 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:34,695 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:34,729 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:02:34,939 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 16:02:34,951 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:34,951 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:34,951 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:34,951 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:34,951 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:35,014 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:35,015 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:35,015 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:35,017 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:35,344 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:35,344 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:35,345 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:35,348 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:35,673 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:35,673 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:35,673 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:35,676 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:35,731 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:02:35,731 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/output.log
+2023-09-12 16:02:35,997 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-12 16:02:35,997 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-12 16:02:35,997 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: stop_status
+2023-09-12 16:02:36,002 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:36,325 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:36,456 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:36,456 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:36,459 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:36,459 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:36,459 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:36,461 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:36,652 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:36,652 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:36,653 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:36,655 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:36,731 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:02:36,952 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:36,952 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:36,952 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:36,952 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:36,952 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:36,974 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:36,975 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:36,975 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:36,979 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:37,303 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:37,304 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:37,304 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:37,307 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:37,631 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:37,631 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:37,632 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:37,634 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:37,733 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:02:37,733 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/output.log
+2023-09-12 16:02:37,978 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:37,978 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:37,979 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:37,981 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:38,303 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:38,303 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:38,303 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:38,306 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:38,625 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:38,626 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:38,626 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:38,628 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:38,734 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:02:38,950 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:38,950 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:38,951 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:38,953 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:38,953 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:38,953 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:38,953 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:38,953 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:38,953 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:39,279 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:39,279 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:39,280 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:39,283 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:39,609 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:39,610 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:39,610 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:39,613 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:39,735 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:02:39,735 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/output.log
+2023-09-12 16:02:39,935 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:39,936 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:39,936 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:39,939 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:40,179 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 16:02:40,260 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:40,261 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:40,261 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:40,264 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:40,596 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:40,596 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:40,596 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:40,599 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:40,735 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:02:40,925 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:40,926 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:40,926 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:40,929 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:40,953 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:40,953 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:40,953 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:40,954 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:40,954 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:41,257 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:41,257 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:41,257 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:41,260 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:41,580 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:41,581 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:41,581 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:41,583 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:41,737 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:02:41,737 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/output.log
+2023-09-12 16:02:41,906 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:41,907 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:41,907 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:41,910 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:42,236 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:42,237 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:42,237 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:42,240 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:42,574 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:42,575 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:42,575 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:42,577 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:42,738 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:02:42,920 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:42,921 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:42,921 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:42,924 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:42,954 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:42,954 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:42,954 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:42,954 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:42,954 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:43,252 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:43,252 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:43,252 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:43,255 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:43,584 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:43,585 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:43,585 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:43,590 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:43,740 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:02:43,740 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/output.log
+2023-09-12 16:02:43,917 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:43,918 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:43,918 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:43,921 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:44,250 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:44,251 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:44,251 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:44,254 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:44,580 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:44,581 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:44,581 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:44,584 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:44,740 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:02:44,909 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:44,909 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:44,910 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:44,912 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:44,955 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:44,955 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:44,955 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:44,955 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:44,955 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:45,237 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:45,238 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:45,238 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:45,238 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 16:02:45,241 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:45,566 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:45,566 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:45,566 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:45,569 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:45,742 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:02:45,742 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/output.log
+2023-09-12 16:02:45,898 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:45,899 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:45,899 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:45,902 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:46,229 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:46,230 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:46,230 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:46,233 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:46,555 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:46,556 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:46,556 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:46,561 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:46,743 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:02:46,880 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:46,881 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:46,881 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:46,884 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:46,955 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:46,955 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:46,956 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:46,956 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:46,956 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:47,211 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:47,211 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:47,211 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:47,214 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:47,546 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:47,547 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:47,547 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:47,550 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:47,745 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:02:47,745 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/output.log
+2023-09-12 16:02:47,897 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:47,898 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:47,898 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:47,901 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:48,231 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:48,232 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:48,232 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:48,235 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:48,564 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:48,564 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:48,564 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:48,568 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:48,746 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:02:48,897 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:48,898 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:48,898 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:48,901 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:48,956 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:48,957 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:48,957 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:48,957 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:48,957 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:49,231 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:49,232 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:49,232 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:49,235 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:49,566 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:49,567 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:49,567 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:49,569 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:49,747 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:02:49,747 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/output.log
+2023-09-12 16:02:49,898 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:49,899 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:49,899 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:49,902 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:50,225 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:50,226 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:50,226 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:50,229 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:50,474 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 16:02:50,552 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:50,748 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:02:50,882 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:50,882 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:50,886 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:50,889 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:50,889 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:50,889 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:50,892 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:50,964 ERROR   gpu       :124030 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-09-12 16:02:50,964 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:50,965 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:50,965 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:50,965 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:50,965 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:50,997 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-12 16:02:50,998 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-12 16:02:50,998 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: stop_status
+2023-09-12 16:02:51,233 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:51,446 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:51,446 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:51,469 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:51,564 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:51,564 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:51,564 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:51,567 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:51,749 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:02:51,749 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/config.yaml
+2023-09-12 16:02:51,749 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/output.log
+2023-09-12 16:02:51,894 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:51,894 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:51,894 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:51,897 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:52,229 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:52,230 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:52,230 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:52,233 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:52,567 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:52,568 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:52,568 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:52,571 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:52,749 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:02:52,916 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:52,920 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:52,920 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:52,922 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:52,965 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:52,965 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:52,966 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:52,966 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:52,966 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:53,243 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:53,244 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:53,244 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:53,249 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:53,578 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:53,579 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:53,579 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:53,580 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:53,751 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:02:53,751 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/output.log
+2023-09-12 16:02:53,908 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:53,909 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:53,909 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:53,912 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:54,243 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:54,244 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:54,244 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:54,247 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:54,575 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:54,575 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:54,576 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:54,578 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:54,752 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:02:54,907 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:54,908 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:54,908 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:54,911 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:54,966 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:54,966 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:54,966 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:54,966 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:54,966 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:55,242 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:55,243 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:55,243 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:55,245 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:55,572 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:55,573 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:55,573 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:55,575 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:55,753 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:02:55,753 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/output.log
+2023-09-12 16:02:55,905 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:55,906 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:55,906 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:55,906 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 16:02:55,909 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:56,237 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:56,238 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:56,238 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:56,241 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:56,571 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:56,571 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:56,571 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:56,574 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:56,754 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:02:56,905 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:56,906 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:56,906 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:56,909 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:56,967 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:56,967 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:56,967 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:56,967 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:56,967 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:57,237 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:57,238 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:57,238 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:57,241 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:57,572 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:57,574 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:57,574 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:57,577 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:57,755 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:02:57,755 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/output.log
+2023-09-12 16:02:57,923 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:57,924 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:57,924 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:57,929 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:58,261 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:58,261 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:58,261 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:58,264 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:58,591 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:58,592 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:58,592 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:58,594 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:58,756 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:02:58,918 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:58,919 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:58,919 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:58,921 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:58,969 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:58,969 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:58,969 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:58,969 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:58,969 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:02:59,254 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:59,255 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:59,255 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:59,258 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:59,588 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:59,589 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:59,589 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:59,591 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:02:59,758 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:02:59,758 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/output.log
+2023-09-12 16:02:59,916 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:02:59,916 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:02:59,916 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:02:59,939 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:00,251 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:00,252 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:00,252 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:00,255 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:00,585 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:00,586 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:00,586 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:00,588 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:00,758 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:03:00,913 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:00,913 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:00,914 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:00,914 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 16:03:00,916 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:00,970 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:00,970 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:00,970 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:00,970 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:00,971 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:01,243 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:01,244 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:01,244 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:01,249 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:01,579 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:01,580 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:01,580 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:01,583 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:01,759 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:03:01,760 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/output.log
+2023-09-12 16:03:01,912 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:01,913 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:01,913 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:01,915 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:02,238 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:02,239 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:02,239 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:02,242 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:02,576 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:02,577 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:02,577 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:02,580 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:02,760 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:03:02,933 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:02,934 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:02,934 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:02,937 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:02,971 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:02,971 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:02,971 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:02,971 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:02,971 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:03,262 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:03,263 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:03,263 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:03,266 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:03,596 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:03,597 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:03,597 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:03,599 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:03,761 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:03:03,762 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/output.log
+2023-09-12 16:03:04,138 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:04,139 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:04,139 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:04,142 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:04,467 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:04,467 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:04,468 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:04,470 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:04,763 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:03:04,804 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:04,805 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:04,805 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:04,807 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:04,972 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:04,972 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:04,972 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:04,972 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:04,972 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:05,135 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:05,136 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:05,136 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:05,139 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:05,468 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:05,469 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:05,469 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:05,472 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:05,774 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:03:05,775 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/output.log
+2023-09-12 16:03:05,801 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:05,802 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:05,802 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:05,804 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:05,998 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 16:03:05,998 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-12 16:03:05,998 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-12 16:03:05,999 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: stop_status
+2023-09-12 16:03:06,139 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:06,467 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:06,467 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:06,468 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:06,473 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:06,473 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:06,473 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:06,476 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:06,776 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:03:06,796 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:06,796 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:06,797 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:06,799 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:06,973 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:06,973 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:06,973 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:06,973 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:06,973 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:07,146 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:07,147 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:07,147 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:07,148 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:07,505 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:07,505 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:07,505 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:07,506 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:07,795 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:03:07,796 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/output.log
+2023-09-12 16:03:07,870 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:07,870 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:07,870 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:07,873 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:08,197 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:08,198 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:08,198 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:08,201 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:08,524 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:08,524 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:08,524 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:08,527 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:08,804 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:03:08,853 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:08,853 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:08,854 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:08,855 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:08,973 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:08,973 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:08,974 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:08,974 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:08,974 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:09,181 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:09,181 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:09,182 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:09,183 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:09,512 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:09,512 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:09,512 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:09,514 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:09,815 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:03:09,816 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/output.log
+2023-09-12 16:03:09,840 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:09,841 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:09,841 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:09,843 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:10,164 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:10,165 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:10,165 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:10,166 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:10,493 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:10,494 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:10,494 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:10,496 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:10,816 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:10,817 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:10,817 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:10,819 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:03:10,821 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:10,974 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:10,975 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:10,975 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:10,975 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:10,975 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:11,066 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 16:03:11,147 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:11,148 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:11,148 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:11,149 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:11,478 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:11,479 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:11,479 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:11,480 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:11,805 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:11,806 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:11,806 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:11,808 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:11,821 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:03:11,821 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/output.log
+2023-09-12 16:03:12,129 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:12,130 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:12,130 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:12,132 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:12,467 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:12,467 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:12,467 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:12,469 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:12,794 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:12,795 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:12,795 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:12,798 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:12,822 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:03:12,976 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:12,976 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:12,976 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:12,976 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:12,976 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:13,120 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:13,121 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:13,121 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:13,125 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:13,448 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:13,449 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:13,449 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:13,450 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:13,782 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:13,782 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:13,782 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:13,785 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:13,823 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:03:13,824 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/output.log
+2023-09-12 16:03:14,111 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:14,112 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:14,112 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:14,114 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:14,444 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:14,445 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:14,445 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:14,446 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:14,835 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:03:14,930 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:14,931 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:14,931 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:14,932 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:14,976 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:14,977 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:14,977 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:14,977 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:14,977 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:15,257 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:15,258 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:15,258 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:15,259 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:15,590 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:15,591 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:15,591 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:15,594 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:15,848 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:03:15,849 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/output.log
+2023-09-12 16:03:15,919 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:15,920 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:15,920 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:15,922 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:16,171 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 16:03:16,252 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:16,252 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:16,252 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:16,254 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:16,581 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:16,581 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:16,582 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:16,583 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:16,850 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:03:16,910 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:16,910 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:16,910 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:16,912 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:16,977 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:16,977 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:16,977 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:16,977 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:16,977 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:17,243 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:17,244 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:17,244 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:17,247 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:17,579 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:17,579 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:17,580 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:17,583 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:17,871 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:03:17,871 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/output.log
+2023-09-12 16:03:17,929 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:17,929 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:17,929 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:17,932 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:18,259 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:18,260 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:18,260 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:18,263 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:18,586 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:18,586 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:18,587 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:18,589 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:18,872 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:03:18,911 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:18,911 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:18,911 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:18,914 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:18,978 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:18,978 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:18,978 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:18,978 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:18,978 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:19,243 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:19,244 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:19,244 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:19,259 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:19,573 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:19,574 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:19,574 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:19,576 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:19,883 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:03:19,884 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/output.log
+2023-09-12 16:03:19,904 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:19,905 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:19,905 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:19,907 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:20,234 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:20,235 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:20,235 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:20,237 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:20,562 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:20,562 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:20,563 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:20,566 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:20,885 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:03:20,888 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:20,889 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:20,889 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:20,892 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:20,922 DEBUG   SystemMonitor:124030 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-09-12 16:03:20,922 DEBUG   SenderThread:124030 [sender.py:send():379] send: stats
+2023-09-12 16:03:20,986 ERROR   gpu       :124030 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-09-12 16:03:20,986 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:20,986 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:20,986 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:20,986 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:20,986 ERROR   gpu       :124030 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-09-12 16:03:20,998 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-12 16:03:20,998 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-12 16:03:20,999 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: stop_status
+2023-09-12 16:03:21,230 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:21,514 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:21,514 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:21,515 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 16:03:21,537 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:21,556 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:21,557 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:21,557 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:21,559 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:21,885 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:21,886 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:21,886 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:21,889 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:03:21,889 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:21,890 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/output.log
+2023-09-12 16:03:22,217 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:22,218 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:22,218 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:22,221 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:22,433 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-12 16:03:22,433 DEBUG   SenderThread:124030 [sender.py:send():379] send: history
+2023-09-12 16:03:22,433 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: summary_record
+2023-09-12 16:03:22,754 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:22,755 DEBUG   SenderThread:124030 [sender.py:send():379] send: exit
+2023-09-12 16:03:22,755 INFO    SenderThread:124030 [sender.py:send_exit():584] handling exit code: 0
+2023-09-12 16:03:22,755 INFO    SenderThread:124030 [sender.py:send_exit():586] handling runtime: 61
+2023-09-12 16:03:22,756 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:22,756 INFO    SenderThread:124030 [sender.py:send_exit():592] send defer
+2023-09-12 16:03:22,756 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: defer
+2023-09-12 16:03:22,756 INFO    HandlerThread:124030 [handler.py:handle_request_defer():170] handle defer: 0
+2023-09-12 16:03:22,756 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: defer
+2023-09-12 16:03:22,756 INFO    SenderThread:124030 [sender.py:send_request_defer():608] handle sender defer: 0
+2023-09-12 16:03:22,756 INFO    SenderThread:124030 [sender.py:transition_state():612] send defer: 1
+2023-09-12 16:03:22,757 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: defer
+2023-09-12 16:03:22,757 INFO    HandlerThread:124030 [handler.py:handle_request_defer():170] handle defer: 1
+2023-09-12 16:03:22,757 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: defer
+2023-09-12 16:03:22,757 INFO    SenderThread:124030 [sender.py:send_request_defer():608] handle sender defer: 1
+2023-09-12 16:03:22,757 INFO    SenderThread:124030 [sender.py:transition_state():612] send defer: 2
+2023-09-12 16:03:22,757 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: defer
+2023-09-12 16:03:22,757 INFO    HandlerThread:124030 [handler.py:handle_request_defer():170] handle defer: 2
+2023-09-12 16:03:22,757 INFO    HandlerThread:124030 [system_monitor.py:finish():190] Stopping system monitor
+2023-09-12 16:03:22,757 DEBUG   SystemMonitor:124030 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-09-12 16:03:22,757 DEBUG   SystemMonitor:124030 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-09-12 16:03:22,764 ERROR   gpu       :124030 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-09-12 16:03:22,765 INFO    HandlerThread:124030 [interfaces.py:finish():202] Joined cpu monitor
+2023-09-12 16:03:22,765 INFO    HandlerThread:124030 [interfaces.py:finish():202] Joined disk monitor
+2023-09-12 16:03:22,765 INFO    HandlerThread:124030 [interfaces.py:finish():202] Joined gpu monitor
+2023-09-12 16:03:22,765 INFO    HandlerThread:124030 [interfaces.py:finish():202] Joined memory monitor
+2023-09-12 16:03:22,765 INFO    HandlerThread:124030 [interfaces.py:finish():202] Joined network monitor
+2023-09-12 16:03:22,765 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: defer
+2023-09-12 16:03:22,765 INFO    SenderThread:124030 [sender.py:send_request_defer():608] handle sender defer: 2
+2023-09-12 16:03:22,765 INFO    SenderThread:124030 [sender.py:transition_state():612] send defer: 3
+2023-09-12 16:03:22,765 DEBUG   SenderThread:124030 [sender.py:send():379] send: stats
+2023-09-12 16:03:22,765 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: defer
+2023-09-12 16:03:22,765 INFO    HandlerThread:124030 [handler.py:handle_request_defer():170] handle defer: 3
+2023-09-12 16:03:22,765 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: defer
+2023-09-12 16:03:22,765 INFO    SenderThread:124030 [sender.py:send_request_defer():608] handle sender defer: 3
+2023-09-12 16:03:22,765 INFO    SenderThread:124030 [sender.py:transition_state():612] send defer: 4
+2023-09-12 16:03:22,765 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: defer
+2023-09-12 16:03:22,766 INFO    HandlerThread:124030 [handler.py:handle_request_defer():170] handle defer: 4
+2023-09-12 16:03:22,766 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: defer
+2023-09-12 16:03:22,766 INFO    SenderThread:124030 [sender.py:send_request_defer():608] handle sender defer: 4
+2023-09-12 16:03:22,766 INFO    SenderThread:124030 [sender.py:transition_state():612] send defer: 5
+2023-09-12 16:03:22,766 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: defer
+2023-09-12 16:03:22,766 INFO    HandlerThread:124030 [handler.py:handle_request_defer():170] handle defer: 5
+2023-09-12 16:03:22,766 DEBUG   SenderThread:124030 [sender.py:send():379] send: summary
+2023-09-12 16:03:22,767 INFO    SenderThread:124030 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 16:03:22,768 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: defer
+2023-09-12 16:03:22,768 INFO    SenderThread:124030 [sender.py:send_request_defer():608] handle sender defer: 5
+2023-09-12 16:03:22,768 INFO    SenderThread:124030 [sender.py:transition_state():612] send defer: 6
+2023-09-12 16:03:22,768 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: defer
+2023-09-12 16:03:22,768 INFO    HandlerThread:124030 [handler.py:handle_request_defer():170] handle defer: 6
+2023-09-12 16:03:22,768 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: defer
+2023-09-12 16:03:22,768 INFO    SenderThread:124030 [sender.py:send_request_defer():608] handle sender defer: 6
+2023-09-12 16:03:22,768 INFO    SenderThread:124030 [sender.py:transition_state():612] send defer: 7
+2023-09-12 16:03:22,768 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 16:03:22,768 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: defer
+2023-09-12 16:03:22,768 INFO    HandlerThread:124030 [handler.py:handle_request_defer():170] handle defer: 7
+2023-09-12 16:03:22,768 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: defer
+2023-09-12 16:03:22,768 INFO    SenderThread:124030 [sender.py:send_request_defer():608] handle sender defer: 7
+2023-09-12 16:03:22,890 INFO    Thread-12 :124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:03:23,511 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: poll_exit
+2023-09-12 16:03:23,595 INFO    SenderThread:124030 [sender.py:transition_state():612] send defer: 8
+2023-09-12 16:03:23,595 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: poll_exit
+2023-09-12 16:03:23,595 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: defer
+2023-09-12 16:03:23,595 INFO    HandlerThread:124030 [handler.py:handle_request_defer():170] handle defer: 8
+2023-09-12 16:03:23,595 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: defer
+2023-09-12 16:03:23,595 INFO    SenderThread:124030 [sender.py:send_request_defer():608] handle sender defer: 8
+2023-09-12 16:03:23,595 INFO    SenderThread:124030 [job_builder.py:build():281] Attempting to build job artifact
+2023-09-12 16:03:23,596 INFO    SenderThread:124030 [job_builder.py:_get_source_type():404] no source found
+2023-09-12 16:03:23,596 INFO    SenderThread:124030 [sender.py:transition_state():612] send defer: 9
+2023-09-12 16:03:23,596 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: defer
+2023-09-12 16:03:23,596 INFO    HandlerThread:124030 [handler.py:handle_request_defer():170] handle defer: 9
+2023-09-12 16:03:23,596 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: defer
+2023-09-12 16:03:23,596 INFO    SenderThread:124030 [sender.py:send_request_defer():608] handle sender defer: 9
+2023-09-12 16:03:23,596 INFO    SenderThread:124030 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-09-12 16:03:23,890 INFO    SenderThread:124030 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/output.log
+2023-09-12 16:03:23,891 INFO    SenderThread:124030 [dir_watcher.py:finish():388] scan: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files
+2023-09-12 16:03:23,891 INFO    SenderThread:124030 [dir_watcher.py:finish():402] scan save: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/conda-environment.yaml conda-environment.yaml
+2023-09-12 16:03:23,891 INFO    SenderThread:124030 [dir_watcher.py:finish():402] scan save: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/output.log output.log
+2023-09-12 16:03:23,891 INFO    SenderThread:124030 [dir_watcher.py:finish():402] scan save: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/config.yaml config.yaml
+2023-09-12 16:03:23,891 INFO    SenderThread:124030 [dir_watcher.py:finish():402] scan save: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/requirements.txt requirements.txt
+2023-09-12 16:03:23,891 INFO    SenderThread:124030 [dir_watcher.py:finish():402] scan save: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-metadata.json wandb-metadata.json
+2023-09-12 16:03:23,891 INFO    SenderThread:124030 [dir_watcher.py:finish():402] scan save: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json wandb-summary.json
+2023-09-12 16:03:23,891 INFO    SenderThread:124030 [sender.py:transition_state():612] send defer: 10
+2023-09-12 16:03:23,894 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: defer
+2023-09-12 16:03:23,894 INFO    HandlerThread:124030 [handler.py:handle_request_defer():170] handle defer: 10
+2023-09-12 16:03:23,894 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: defer
+2023-09-12 16:03:23,894 INFO    SenderThread:124030 [sender.py:send_request_defer():608] handle sender defer: 10
+2023-09-12 16:03:23,894 INFO    SenderThread:124030 [file_pusher.py:finish():175] shutting down file pusher
+2023-09-12 16:03:24,511 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: poll_exit
+2023-09-12 16:03:24,511 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: poll_exit
+2023-09-12 16:03:24,831 INFO    wandb-upload_0:124030 [upload_job.py:push():131] Uploaded file /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/output.log
+2023-09-12 16:03:24,890 INFO    wandb-upload_1:124030 [upload_job.py:push():131] Uploaded file /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/config.yaml
+2023-09-12 16:03:24,971 INFO    wandb-upload_2:124030 [upload_job.py:push():131] Uploaded file /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/requirements.txt
+2023-09-12 16:03:25,154 INFO    wandb-upload_3:124030 [upload_job.py:push():131] Uploaded file /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/files/wandb-summary.json
+2023-09-12 16:03:25,354 INFO    Thread-11 (_thread_body):124030 [sender.py:transition_state():612] send defer: 11
+2023-09-12 16:03:25,355 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: defer
+2023-09-12 16:03:25,355 INFO    HandlerThread:124030 [handler.py:handle_request_defer():170] handle defer: 11
+2023-09-12 16:03:25,355 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: defer
+2023-09-12 16:03:25,355 INFO    SenderThread:124030 [sender.py:send_request_defer():608] handle sender defer: 11
+2023-09-12 16:03:25,355 INFO    SenderThread:124030 [file_pusher.py:join():181] waiting for file pusher
+2023-09-12 16:03:25,355 INFO    SenderThread:124030 [sender.py:transition_state():612] send defer: 12
+2023-09-12 16:03:25,355 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: defer
+2023-09-12 16:03:25,355 INFO    HandlerThread:124030 [handler.py:handle_request_defer():170] handle defer: 12
+2023-09-12 16:03:25,355 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: defer
+2023-09-12 16:03:25,355 INFO    SenderThread:124030 [sender.py:send_request_defer():608] handle sender defer: 12
+2023-09-12 16:03:25,355 INFO    SenderThread:124030 [file_stream.py:finish():594] file stream finish called
+2023-09-12 16:03:25,511 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: poll_exit
+2023-09-12 16:03:26,482 INFO    SenderThread:124030 [file_stream.py:finish():598] file stream finish is done
+2023-09-12 16:03:26,482 INFO    SenderThread:124030 [sender.py:transition_state():612] send defer: 13
+2023-09-12 16:03:26,483 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: poll_exit
+2023-09-12 16:03:26,483 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: defer
+2023-09-12 16:03:26,483 INFO    HandlerThread:124030 [handler.py:handle_request_defer():170] handle defer: 13
+2023-09-12 16:03:26,483 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: defer
+2023-09-12 16:03:26,483 INFO    SenderThread:124030 [sender.py:send_request_defer():608] handle sender defer: 13
+2023-09-12 16:03:26,483 INFO    SenderThread:124030 [sender.py:transition_state():612] send defer: 14
+2023-09-12 16:03:26,483 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: defer
+2023-09-12 16:03:26,483 INFO    HandlerThread:124030 [handler.py:handle_request_defer():170] handle defer: 14
+2023-09-12 16:03:26,483 DEBUG   SenderThread:124030 [sender.py:send():379] send: final
+2023-09-12 16:03:26,483 DEBUG   SenderThread:124030 [sender.py:send():379] send: footer
+2023-09-12 16:03:26,483 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: defer
+2023-09-12 16:03:26,483 INFO    SenderThread:124030 [sender.py:send_request_defer():608] handle sender defer: 14
+2023-09-12 16:03:26,484 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: poll_exit
+2023-09-12 16:03:26,484 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: poll_exit
+2023-09-12 16:03:26,484 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: server_info
+2023-09-12 16:03:26,484 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: get_summary
+2023-09-12 16:03:26,484 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: sampled_history
+2023-09-12 16:03:26,484 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-12 16:03:26,485 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: poll_exit
+2023-09-12 16:03:26,485 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: poll_exit
+2023-09-12 16:03:26,485 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: server_info
+2023-09-12 16:03:26,486 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: job_info
+2023-09-12 16:03:26,891 DEBUG   SenderThread:124030 [sender.py:send_request():406] send_request: job_info
+2023-09-12 16:03:26,891 INFO    MainThread:124030 [wandb_run.py:_footer_history_summary_info():3557] rendering history
+2023-09-12 16:03:26,891 INFO    MainThread:124030 [wandb_run.py:_footer_history_summary_info():3589] rendering summary
+2023-09-12 16:03:26,892 INFO    MainThread:124030 [wandb_run.py:_footer_sync_info():3516] logging synced files
+2023-09-12 16:03:26,892 DEBUG   HandlerThread:124030 [handler.py:handle_request():144] handle_request: shutdown
+2023-09-12 16:03:26,892 INFO    HandlerThread:124030 [handler.py:finish():840] shutting down handler
+2023-09-12 16:03:27,487 INFO    WriterThread:124030 [datastore.py:close():294] close: /home/Student/s4820129/COMP3710_VAE/wandb/run-20230912_160219-hihpe4ss/run-hihpe4ss.wandb
+2023-09-12 16:03:27,891 INFO    SenderThread:124030 [sender.py:finish():1531] shutting down sender
+2023-09-12 16:03:27,891 INFO    SenderThread:124030 [file_pusher.py:finish():175] shutting down file pusher
+2023-09-12 16:03:27,892 INFO    SenderThread:124030 [file_pusher.py:join():181] waiting for file pusher

@@ -1,0 +1,33 @@
+getting dataset
+Dataset is already downloaded
+dataset downloaded!
+319694.34375
+defining model
+1
+forward pass
+Traceback (most recent call last):
+  File "/home/Student/s4820129/COMP3710_VAE/VAE_script.py", line 72, in <module>
+    x_hat, mu, sigma = model(x)
+                       ^^^^^^^^
+  File "/home/Student/s4820129/miniconda3/envs/cluster_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Student/s4820129/COMP3710_VAE/VAE_classes.py", line 140, in forward
+    return self.decode(z), mu, logvar
+           ^^^^^^^^^^^^^^
+  File "/home/Student/s4820129/COMP3710_VAE/VAE_classes.py", line 134, in decode
+    z = self.decoder_conv(z)
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/home/Student/s4820129/miniconda3/envs/cluster_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Student/s4820129/miniconda3/envs/cluster_env/lib/python3.11/site-packages/torch/nn/modules/container.py", line 217, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "/home/Student/s4820129/miniconda3/envs/cluster_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Student/s4820129/miniconda3/envs/cluster_env/lib/python3.11/site-packages/torch/nn/modules/conv.py", line 956, in forward
+    return F.conv_transpose2d(
+           ^^^^^^^^^^^^^^^^^^^
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.95 GiB (GPU 0; 10.00 GiB total capacity; 5.52 GiB already allocated; 1.09 GiB free; 6.75 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

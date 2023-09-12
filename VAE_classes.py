@@ -10,68 +10,178 @@ class VarAutoEncoder(nn.Module):
         self.latent_dim = latent_dim
 
         self.encoder_layers = nn.Sequential(
-            #batch_size x 3 x 256 x 256
-            nn.Conv2d(3,64,kernel_size=3,padding=1),
+            # Input: batch_size x 3 x 256 x 256
+            nn.Conv2d(3, 64, kernel_size=3, padding=1),
             nn.BatchNorm2d(64),
             nn.ReLU(),
-            #batch_size x 64 x 256 x 256
-            nn.Conv2d(64,128,padding=1),
+            # Output: batch_size x 64 x 256 x 256
+            nn.Conv2d(64, 128, kernel_size=3, padding=1),
             nn.BatchNorm2d(128),
             nn.ReLU(),
-            #batch_size x 128 x 256 x 256
+            # Output: batch_size x 128 x 256 x 256
             nn.MaxPool2d(2, stride=2),
-            #batch_size x 128 x 128 x 128
+            # Output: batch_size x 128 x 128 x 128
             nn.Conv2d(128, 256, kernel_size=3, padding=1),
             nn.BatchNorm2d(256),
             nn.Conv2d(256, 512, kernel_size=3, padding=1),
-            #batch_size x 512 x 128 x 128
+            nn.MaxPool2d(8, stride=8),  # Added this line to change the dimensions to 16x16
+            # Output: batch_size x 512 x 16 x 16
             nn.LeakyReLU()
         )
 
-        self.fc_mu = nn.Linear(512*128*128, latent_dim)
-        self.fc_sigma = nn.Linear(512*128*128, latent_dim)
-        self.fc_decode = nn.Linear(latent_dim, 512*128*128)
+        self.fc_decode = nn.Linear(latent_dim, 128 * 16 * 16)
+        self.fc_mu = nn.Linear(128 * 64 * 64, latent_dim)
+        self.fc_logvar = nn.Linear(128 * 64 * 64, latent_dim)           
 
         self.decoder_layers = nn.Sequential(
-            # batch_size x 512 x 128 x 128
-            nn.ConvTranspose2d(512, 256, kernel_size=3, stride=1, padding=1),
+            # Start: batch_size x 512 x 16 x 16
+            nn.ConvTranspose2d(512, 256, kernel_size=8, stride=8),  # To match the MaxPool2d in encoder
             nn.BatchNorm2d(256),
             nn.ReLU(),
-            # batch_size x 256 x 128 x 128
-            nn.ConvTranspose2d(256, 128, kernel_size=3, stride=1, padding=1),
+            # Output: batch_size x 256 x 128 x 128
+            nn.ConvTranspose2d(256, 128, kernel_size=2, stride=2),
             nn.BatchNorm2d(128),
             nn.ReLU(),
-            # batch_size x 128 x 128 x 128
+            # Output: batch_size x 128 x 256 x 256
             nn.Conv2d(128, 64, kernel_size=3, stride=1, padding=1),
             nn.BatchNorm2d(64),
             nn.ReLU(),
-            # batch_size x 64 x 128 x 128
+            # Output: batch_size x 64 x 256 x 256
             nn.Conv2d(64, 3, kernel_size=3, stride=1, padding=1),
             nn.LeakyReLU()
-            # batch_size x 3 x 128 x 128
+            # Final output: batch_size x 3 x 256 x 256
         )
 
-    def reparameterize(self, mu, sigma):
-        std = torch.exp(0.5*sigma)
+    def reparameterize(self, mu, logvar):
+        std = torch.exp(0.5*logvar)
         eps = torch.randn_like(std)
         return mu + eps*std
 
-    def forward(self,x):
+    def forward(self, x):
         x = self.encoder_layers(x)
         x = x.view(x.size(0), -1)
 
         mu = self.fc_mu(x)
-        sigma = self.fc_sigma(x)
-        z = self.reparameterize(mu, sigma)
+        logvar = self.fc_sigma(x)  
+        z = self.reparameterize(mu, logvar)
 
         x = self.fc_decode(z)
-        x = x.view(-1, 512, 128, 128) # Reshape to 4D before feeding into the decoder
+        x = x.view(-1, 512, 16, 16)
 
         x_hat = self.decoder_layers(x)
-        return x_hat, mu, sigma
+        return x_hat, mu, logvar  # Returning logvar instead of sigma
 
 
+class Lars(nn.Module):
+    def __init__(self, latent_dim):
+        super(Lars, self).__init__()
+        
+        self.latent_dim = latent_dim
+        
+        # Encoder layers
+        self.encoder = nn.Sequential(
+            nn.Conv2d(3, 64, kernel_size=4, stride=2, padding=1),
+            nn.ReLU(),
+            nn.Conv2d(64, 128, kernel_size=4, stride=2, padding=1),
+            nn.ReLU(),
+        )
+        
+        self.fc_mu = nn.Linear(128 * 64 * 64, latent_dim)  # adjusted for encoder output shape
+        self.fc_logvar = nn.Linear(128 * 64 * 64, latent_dim)  # adjusted for encoder output shape
+        
+        # Decoder layers
+        self.decoder = nn.Sequential(
+            nn.Linear(latent_dim, 128 * 64 * 64),  # adjusted for encoder output shape
+            nn.ReLU()
+        )
+        
+        self.decoder_conv = nn.Sequential(
+            nn.ConvTranspose2d(128, 64, kernel_size=4, stride=2, padding=1),
+            nn.ReLU(),
+            nn.ConvTranspose2d(64, 3, kernel_size=4, stride=2, padding=1),
+            nn.Sigmoid()
+        )
+        
+    def encode(self, x):
+        x = self.encoder(x)
+        x = x.view(x.size(0), -1)
+        mu = self.fc_mu(x)
+        logvar = self.fc_logvar(x)
+        return mu, logvar
+    
+    def reparameterize(self, mu, logvar):
+        std = torch.exp(0.5 * logvar)
+        eps = torch.randn_like(std)
+        return mu + eps * std
+    
+    def decode(self, z):
+        z = self.decoder(z)
+        z = z.view(z.size(0), 128, 64, 64)  # Adjust the shape for convolutional layers, changed to 64x64
+        z = self.decoder_conv(z)
+        return z
+    
+    def forward(self, x):
+        mu, logvar = self.encode(x)
+        z = self.reparameterize(mu, logvar)
+        return self.decode(z), mu, logvar
+# class Lars(nn.Module):
+#     def __init__(self, latent_dim):
+#         super(Lars, self).__init__()
+        
+#         self.latent_dim = latent_dim
+        
+#         # Encoder layers
+#         self.encoder = nn.Sequential(
+#             nn.Conv2d(3, 64, kernel_size=4, stride=2, padding=1),
+#             nn.ReLU(),
+#             nn.Conv2d(64, 128, kernel_size=4, stride=2, padding=1),
+#             nn.ReLU(),
+#         )
+        
+#         self.fc_mu = nn.Linear(128*64*64, latent_dim)  # Updated this line
+#         self.fc_logvar = nn.Linear(128*64*64, latent_dim)  # Updated this line
+        
+#         # Decoder layers
+#         self.decoder = nn.Sequential(
+#             nn.Linear(latent_dim, 128*64*64),  # Updated this line
+#             nn.ReLU()
+#         )
+        
+#         self.decoder_conv = nn.Sequential(
+#             nn.ConvTranspose2d(128, 64, kernel_size=4, stride=2, padding=1),
+#             nn.ReLU(),
+#             nn.ConvTranspose2d(64, 3, kernel_size=4, stride=2, padding=1),
+#             nn.Sigmoid()
+#         )
+        
+#     def encode(self, x):
+#         x = self.encoder(x)
+#         print(f"Encoder output shape: {x.shape}")
+#         x = x.view(x.size(0), -1)
+#         mu = self.fc_mu(x)
+#         logvar = self.fc_logvar(x)
+#         return mu, logvar
 
+#     def sample(self, num_samples, device):
+#         z = torch.randn(num_samples, self.latent_dim)
+#         image_tensor = self.decode(z)
+#         return image_tensor
+    
+#     def reparameterize(self, mu, logvar):
+#         std = torch.exp(0.5*logvar)
+#         eps = torch.randn_like(std)
+#         return mu + eps*std
+        
+#     def decode(self, z):
+#         z = self.decoder(z)
+#         z = z.view(z.size(0), 128, 16, 16)  # Adjust the shape for convolutional layers
+#         z = self.decoder_conv(z)
+#         return z
+    
+#     def forward(self, x):
+#         mu, logvar = self.encode(x)
+#         z = self.reparameterize(mu, logvar)
+#         return self.decode(z), mu, logvar
 
 
 

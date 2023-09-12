@@ -1,0 +1,28 @@
+getting dataset
+Dataset is already downloaded
+dataset downloaded!
+42257.0
+defining model
+1
+forward pass
+Traceback (most recent call last):
+  File "/home/Student/s4820129/COMP3710_VAE/VAE_script.py", line 72, in <module>
+    x_hat, mu, sigma = model(x)
+                       ^^^^^^^^
+  File "/home/Student/s4820129/miniconda3/envs/cluster_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Student/s4820129/COMP3710_VAE/VAE_classes.py", line 131, in forward
+    mu, logvar = self.encode(x)
+                 ^^^^^^^^^^^^^^
+  File "/home/Student/s4820129/COMP3710_VAE/VAE_classes.py", line 110, in encode
+    mu = self.fc_mu(x)
+         ^^^^^^^^^^^^^
+  File "/home/Student/s4820129/miniconda3/envs/cluster_env/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Student/s4820129/miniconda3/envs/cluster_env/lib/python3.11/site-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (500x524288 and 32768x2)
+Encoder output shape: torch.Size([500, 128, 64, 64])

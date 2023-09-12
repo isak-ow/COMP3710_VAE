@@ -1,0 +1,10 @@
+
+Dataset is already downloaded
+getting dataset
+Dataset is already downloaded
+dataset downloaded!
+Traceback (most recent call last):
+  File "/home/Student/s4820129/COMP3710_VAE/VAE_script.py", line 107, in <module>
+    model = Lars(latent_dim)
+            ^^^^
+NameError: name 'Lars' is not defined
