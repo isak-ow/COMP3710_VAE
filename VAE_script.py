@@ -91,6 +91,7 @@ class VAE(nn.Module):
         z = self.reparameterize(mu, logvar)
         recon_x = self.decode(z)
         return recon_x, mu, logvar
+    
 oasis = get_dataset('keras_png_slices_data')
 
 #dimension of latent space should be 2d or 3d for plotting
@@ -106,7 +107,7 @@ model = VAE(latent_dim)
 dataloader = DataLoader(oasis, batch_size, shuffle = True)
 
 lr = 0.001
-num_epochs = 20
+num_epochs = 1
 optimizer = torch.optim.Adam(model.parameters(), lr=lr)
 device = torch.device('cuda')
 
