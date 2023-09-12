@@ -107,7 +107,7 @@ model = VAE(latent_dim)
 dataloader = DataLoader(oasis, batch_size, shuffle = True)
 
 lr = 0.001
-num_epochs = 1
+num_epochs = 25
 optimizer = torch.optim.Adam(model.parameters(), lr=lr)
 device = torch.device('cuda')
 
